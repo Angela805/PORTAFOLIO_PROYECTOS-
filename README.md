@@ -22,7 +22,8 @@ Desarrollo completo del sitio web, incluyendo estructura HTML, estilos CSS y fun
 **Aprendizajes obtenidos:**  
 Se reforzó el uso de estructuras HTML semánticas, diseño visual y organización de archivos para proyectos web.
 ### Vista previa
-![Catálogo Jewelry Blue](imagenes/jewelry.png)
+![Catálogo Jewelry Blue Vista 1](images/joyeria.png)
+![Catálogo Jewelry Blue VIsta 2](images/blue.png)
 
 ---
 
