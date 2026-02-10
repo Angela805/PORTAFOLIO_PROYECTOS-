@@ -42,8 +42,13 @@ Sistema web con autenticación que centraliza la información de los docentes, p
 Trabajo en equipo.  
 Mi participación se centró en el **diseño visual del sistema**, la **creación de mockups** y el **apoyo en pruebas de usabilidad**.
 
-**Aprendizajes obtenidos:**  
+**Aprendizajes obtenidos:** 
+
 Se reforzaron habilidades en diseño de interfaces, experiencia de usuario y colaboración en proyectos académicos.
+### Vista previa
+### Vista previa
+![SUPI](images/supi.png)
+
 ---
 ## Proyecto 3: Panel de Inventario para Farmacia
 
@@ -72,5 +77,7 @@ Mi participación se enfocó en el **desarrollo del frontend**, el diseño de la
 
 **Aprendizajes obtenidos:**  
 Se fortalecieron conocimientos en desarrollo web dinámico, manejo de sesiones, bases de datos y trabajo colaborativo.
+### Vista previa
+![Login Farmacia](images/farmacia.png)
 
 ---
