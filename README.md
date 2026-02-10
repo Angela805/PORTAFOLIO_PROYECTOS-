@@ -1,8 +1,6 @@
 # PORTAFOLIO_PROYECTOS
 
-Portafolio de proyectos creado para la materia **Proyecto Integrador II**.  
-Este repositorio presenta una selección de proyectos desarrollados con el objetivo de demostrar habilidades y conocimientos adquiridos durante la formación académica en el área de desarrollo de software.
----
+**Portafolio de proyectos creado para la materia Proyecto Integrador II** Este repositorio presenta una selección de proyectos desarrollados con el objetivo de demostrar habilidades y conocimientos adquiridos durante la formación académica en el área de desarrollo de software.---
 
 ## Proyecto 1: Catálogo Web "Jewelry Blue"
 
@@ -44,7 +42,7 @@ Mi participación se centró en el **diseño visual del sistema**, la **creació
 **Aprendizajes obtenidos:** 
 
 Se reforzaron habilidades en diseño de interfaces, experiencia de usuario y colaboración en proyectos académicos.
-### Vista previa
+
 ### Vista previa
 ![SUPI](images/supi.png)
 
@@ -62,7 +60,6 @@ PHP, MySQL, HTML, CSS, Bootstrap, JavaScript.
 
 **Descripción:**  
 Aplicación web completa con sistema de autenticación de usuarios, manejo de sesiones y conexión a una base de datos. Implementa operaciones CRUD para la gestión de medicamentos y administración de proveedores.
-
 Cuenta con un panel de administración que permite visualizar el inventario, filtrar medicamentos por categoría y gestionar registros de forma eficiente.
 
 **Rol en el proyecto:**  
