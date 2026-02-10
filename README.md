@@ -2,7 +2,6 @@
 
 Portafolio de proyectos creado para la materia **Proyecto Integrador II**.  
 Este repositorio presenta una selección de proyectos desarrollados con el objetivo de demostrar habilidades y conocimientos adquiridos durante la formación académica en el área de desarrollo de software.
-
 ---
 
 ## Proyecto 1: Catálogo Web "Jewelry Blue"
@@ -11,7 +10,7 @@ Este repositorio presenta una selección de proyectos desarrollados con el objet
 Desarrollar un catálogo web para mostrar productos de joyería de forma visual y organizada.
 
 **Tecnologías utilizadas:**  
-HTML5, CSS3, JavaScript, Google Fonts.
+HTML, CSS, JavaScript, Google Fonts.
 
 **Descripción:**  
 El proyecto consiste en una página web con un catálogo de productos clasificados por categorías como anillos, collares, pulseras y charms. Incluye un menú de navegación, un encabezado con video y una sección de contacto.
@@ -59,7 +58,7 @@ https://github.com/DanielRoman2006/SUPI/tree/main/SUPI.CLICK
 Desarrollar una aplicación web para la gestión de inventario de medicamentos, permitiendo el registro, consulta, edición y eliminación de información de manera segura y organizada.
 
 **Tecnologías utilizadas:**  
-PHP, MySQL, HTML5, CSS3, Bootstrap 5, JavaScript.
+PHP, MySQL, HTML, CSS, Bootstrap, JavaScript.
 
 **Descripción:**  
 Aplicación web completa con sistema de autenticación de usuarios, manejo de sesiones y conexión a una base de datos. Implementa operaciones CRUD para la gestión de medicamentos y administración de proveedores.
