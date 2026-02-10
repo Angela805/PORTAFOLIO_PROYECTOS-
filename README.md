@@ -49,6 +49,9 @@ Se reforzaron habilidades en diseño de interfaces, experiencia de usuario y col
 ### Vista previa
 ![SUPI](images/supi.png)
 
+### Repositorio del Proyecto 
+https://github.com/DanielRoman2006/SUPI/tree/main/SUPI.CLICK
+
 ---
 ## Proyecto 3: Panel de Inventario para Farmacia
 
