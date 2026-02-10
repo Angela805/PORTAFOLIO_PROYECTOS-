@@ -1,0 +1,392 @@
+/* Aquí están los colores y letras que uso en toda la página */
+:root{
+    --white: #ffffff;
+    --bone: #e0d7c7;
+    --lion: #BE9F89;
+    --lightblue:#98c3c7;
+    --moosntone:#5399a0;
+    --darkblue: #2c3e50;
+    --gunmental:#1b2a31;
+    --titulo:'Arima Madurai', serif;
+    --parrafo:'Mulish', sans-serif;
+}
+/* Esto hace que todo mida igual con box-sizing */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+body{
+    font-size:1.6rem; /* 16px */
+    overflow-x: hidden; /* Para que no salga scroll a los lados */
+}
+*,*::before, *::after 
+{
+    box-sizing: inherit; /* Todo igual que el html */
+} 
+/* Para que el contenido no se pegue a los bordes */
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+/* Botones bonitos */
+.btn{
+    text-decoration: none;
+    color:var(--bone);
+    font-size: 2rem;
+    text-decoration:capitalize;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+@media (min-width: 768px){
+    .btn{
+        font-size: 2.2rem;
+    }
+}
+.btn-rojo{
+    background-color: var(--moosntone);
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 2rem;
+}
+.bordes{
+    border:4px solid var(--bone);
+}
+@media (min-width: 768px){
+    .bordes{
+    border:4px solid var(--bone);
+}
+}
+.bordes:hover{
+    background-color: var(--bone);
+    color: var(--gunmental);
+}
+/* Letras bonitas para títulos y textos */
+h1,h2{
+    font-family: var(--titulo);
+}
+h3,p,a{
+    font-family: var(--parrafo);
+}
+.light-blue{
+    color: var(--lightblue);
+}
+.ocultar{
+    display: none; /* Oculta el elemento */
+}
+.cerrar{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--white);
+    position: absolute;
+    top:0;
+    user-select: none; /* No se puede seleccionar */
+    right: 50px; /* Donde va la X */
+}
+@keyframes desplazamiento{
+   0%{
+        transform: translateX(100%); /* Sale de la derecha */
+    }
+ 100%{
+        transform: translateX(0); /* Llega a su lugar */
+    }
+}
+.cerrar:hover{
+    color: var(--moosntone); /* Cambia de color la X */
+    cursor: pointer; /* Mano al pasar */
+}
+/* Fondo del menú arriba */
+.contenedor-navegacion{
+    background-color:var(--gunmental); 
+    position:relative;
+    z-index: 2100; /* Para que esté encima del video */
+
+}
+.contenido-navegacion{
+    display:flex;
+    align-items: center;
+    justify-content: space-between; /* Espacio entre logo y menú */
+}
+.logo h2, .navegacion a{
+    color: var(--white);
+
+}
+.navegacion a {
+    text-decoration: none;
+    font-size: 2rem; /* tamaño de letra */
+    padding: 1.5rem;
+    display: block;
+    transition: color .3s ease-in-out; /* Cambia suave el color */
+}
+.navegacion {
+    position: fixed;
+    top: 0;   
+    right: 0;
+    height: 100vh; /* Todo el alto */
+    width: 40rem;
+    padding: 3rem 4rem;
+    background-color: var(--gunmental);
+    animation:desplazamiento .5s ease-in-out;
+    z-index: 2000;
+}
+.navegacion a:hover{
+color : var(--moosntone);
+}
+.navegacion a:first-of-type{ 
+    margin-top: 5rem;
+}
+.hamburguesa:hover{
+    cursor: pointer; /* Mano al pasar */
+}
+.hamburguesa span{
+    background-color: var(--white);
+    display: block;
+    height: .5rem;
+    width: 5rem;
+    margin-bottom :.5rem; 
+}
+
+/* Aquí va el video de fondo */
+.contenido-header{
+    position: relative;
+}
+.contenido-header::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece el video */
+}
+video{
+    width: 100%;
+    height: 60%;
+}
+.texto-encabezado{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.texto-encabezado h2{
+    color:var(--bone);
+    font-size: 4rem;
+}
+@media(min-width: 768px){
+    .texto-encabezado h2{
+        font-size: 8rem;
+    }
+}   
+/* Bienvenida y sección nosotros */
+.bienvenida{
+    font-size: 4rem;
+    color: var(--darkblue);
+    text-align: center;
+}
+@media (min-width: 768px){
+    .bienvenida{
+        text-align: left ;
+    }
+}
+ h1{
+    font: size 5rem;
+    color: var(--moosntone);
+}
+@media (min-width: 768px){
+    h1{
+       text-align: left;
+    }
+}
+.textonosotros p{
+    font-size:2rem;
+}
+.contenedor-nosotros{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width: 768px){
+    .contenedor-nosotros{
+    display: flex;
+    justify-content: space-between;
+    }
+}
+.textonosotros{
+    flex:0 0 calc(80% - 4rem); /* El texto ocupa casi todo */
+
+}
+/* Aquí van los productos en cuadritos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.producto {
+    background: var(--white);
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.10);
+    border: 2px solid var(--bone);
+    width: 28rem;
+    padding: 2rem 2rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow .3s, transform .3s;
+    position: relative;
+}
+.producto:hover {
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+    transform: translateY(-8px) scale(1.03);
+    border-color: var(--moosntone);
+}
+.producto img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 1.2rem;
+    border-radius: 1rem;
+    background: var(--bone);
+    object-fit: contain;
+}
+.producto h3 {
+    color: var(--darkblue);
+    font-size: 2.2rem;
+    margin: 0.5rem 0 0.2rem 0;
+    font-family: var(--titulo);
+    text-align: center;
+}
+.producto .precio {
+    color: var(--moosntone);
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.2rem 0 0.5rem 0;
+    text-align: center;
+}
+.producto .descripcion {
+    color: var(--gunmental);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+/* Botones para filtrar productos */
+.botones-productos {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+.botones-productos button {
+    background: var(--white);
+    color: var(--moosntone);
+    border: 2px solid var(--moosntone);
+    border-radius: 2rem;
+    padding: 0.8rem 2.5rem;
+    font-size: 1.7rem;
+    font-family: var(--parrafo);
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, border 0.3s;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+    outline: none;
+}
+.botones-productos button:hover, .botones-productos button.active {
+    background: var(--moosntone);
+    color: var(--white);
+    border-color: var(--darkblue);
+    box-shadow: 0 4px 16px rgba(44,62,80,0.13);
+    transform: translateY(-2px) scale(1.04);
+}
+/* Títulos y textos de la sección productos */
+.Producto h2 {
+    color: var(--moosntone);
+    font-family: var(--titulo);
+    font-size: 3.2rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(44,62,80,0.07);
+}
+.Producto .bienvenida {
+    color: var(--lightblue);
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-family: var(--parrafo);
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.Producto h1 {
+    color: var(--darkblue);
+    font-family: var(--titulo);
+    font-size: 3.8rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+/* Fondo y recuadro de la sección contacto */
+.contacto {
+    background: linear-gradient(120deg, var(--lightblue) 0%, var(--bone) 100%);
+    padding: 5rem 0 4rem 0;
+    margin-top: 4rem;
+}
+.contacto-contenido {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    border-radius: 2rem;
+    box-shadow: 0 4px 24px rgba(44,62,80,0.10);
+    padding: 3rem 2.5rem 2.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .contacto-contenido {
+        padding: 2rem 0.5rem;
+        border-radius: 0;
+    }
+}
+@media (min-width: 900px) {
+    .contacto-contenido {
+        border-radius: 2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+.contacto h2 {
+    color: var(--moosntone);
+    font-family: var(--titulo);
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.contacto-desc {
+    color: var(--darkblue);
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-family: var(--parrafo);
+}
+.contacto-mail {
+    color: var(--moosntone);
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+.contacto-mail:hover {
+    color: var(--darkblue);
+}
