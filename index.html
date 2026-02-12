@@ -4,39 +4,80 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portafolio - Maria Cohuo</title>
+
 <style>
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    background: #f4f6f9;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f4f6f9, #e9efff);
+}
+
+header {
+    background: linear-gradient(135deg, #0d6efd, #4e9eff);
+    color: white;
+    padding: 60px 20px;
     text-align: center;
 }
-header {
-    background: #0d6efd;
-    color: white;
-    padding: 40px 20px;
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
 }
+
+header p {
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
 .proyectos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 40px;
+    gap: 30px;
+    padding: 50px 20px;
 }
+
 .card {
     background: white;
     width: 300px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-a {
-    text-decoration: none;
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    margin-top: 0;
     color: #0d6efd;
-    font-weight: bold;
+}
+
+.card p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: #0d6efd;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.boton:hover {
+    background: #084298;
 }
 </style>
 </head>
+
 <body>
 
 <header>
@@ -45,28 +86,31 @@ a {
 </header>
 
 <section class="proyectos">
+
     <div class="card">
         <h3>Jewelry Blue</h3>
-<a href="https://github.com/Angela805/PORTAFOLIO_PROYECTOS-?tab=readme-ov-file#proyecto-1-cat%C3%A1logo-web-jewelry-blue" target="_blank">
-Ver proyecto
-</a>
-
-
+        <p>Catálogo web de productos de joyería.</p>
+        <a class="boton" href="https://github.com/Angela805/PORTAFOLIO_PROYECTOS-" target="_blank">
+            Ver proyecto
+        </a>
     </div>
 
     <div class="card">
         <h3>Panel de Inventario</h3>
         <p>Sistema CRUD para farmacia con autenticación.</p>
-        <a href="https://github.com/Angela805/PORTAFOLIO_PROYECTOS-?tab=readme-ov-file#proyecto-2-supi--sistema-universitario-privado-integral" target ="_blank">Ver proyecto</a>
+        <a class="boton" href="https://github.com/Angela805/PORTAFOLIO_PROYECTOS-" target="_blank">
+            Ver proyecto
+        </a>
     </div>
 
     <div class="card">
         <h3>SUPI</h3>
         <p>Sistema universitario de búsqueda de docentes.</p>
-        <a href="https://github.com/Angela805/PORTAFOLIO_PROYECTOS-?tab=readme-ov-file#proyecto-3-panel-de-inventario-para-farmacia" target="_blank">
-Ver proyecto
-</a>
+        <a class="boton" href="https://github.com/Angela805/PORTAFOLIO_PROYECTOS-" target="_blank">
+            Ver proyecto
+        </a>
     </div>
+
 </section>
 
 </body>
