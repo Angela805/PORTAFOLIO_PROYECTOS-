@@ -17,16 +17,9 @@ font-family:'Poppins', sans-serif;
 }
 
 body{
-background: linear-gradient(135deg,
-#0f0c29,
-#1a1238,
-#240046,
-#10002b
-);
+background: linear-gradient(135deg,#0f0c29,#1a1238,#240046,#10002b);
 color:white;
 }
-
-
 
 /* HEADER */
 
@@ -68,6 +61,24 @@ font-weight:300;
 opacity:0.9;
 }
 
+/* SOBRE MI */
+
+.sobre-mi{
+max-width:900px;
+margin:60px auto;
+text-align:center;
+padding:0 20px;
+}
+
+.sobre-mi h2{
+margin-bottom:20px;
+}
+
+.sobre-mi p{
+font-weight:300;
+line-height:1.6;
+}
+
 /* PROYECTOS */
 
 .proyectos{
@@ -79,17 +90,9 @@ padding:80px 20px;
 max-width:1300px;
 margin:auto;
 
-background: linear-gradient(135deg,
-#2a0845,
-#3c096c,
-#5a189a,
-#240046
-);
-
+background: linear-gradient(135deg,#2a0845,#3c096c,#5a189a,#240046);
 border-radius:30px;
 }
-
-
 
 .card{
 background:rgba(255,255,255,0.08);
@@ -127,7 +130,7 @@ color:#00f2ff;
 .boton{
 display:block;
 text-align:center;
-margin-top:20px;
+margin-top:15px;
 padding:12px;
 border-radius:30px;
 background:linear-gradient(45deg,#00f2ff,#4facfe);
@@ -135,28 +138,15 @@ color:#000;
 font-weight:600;
 text-decoration:none;
 transition:0.3s;
+border:none;
+cursor:pointer;
 }
 
 .boton:hover{
 transform:scale(1.05);
 }
 
-footer{
-text-align:center;
-padding:40px;
-font-size:0.9rem;
-opacity:0.7;
-}
-
-@media(max-width:768px){
-header h1{
-font-size:2rem;
-}
-.card{
-width:90%;
-}
-}
-  /* MODAL */
+/* MODAL */
 
 .modal{
 display:none;
@@ -165,7 +155,7 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.8);
+background:rgba(0,0,0,0.85);
 justify-content:center;
 align-items:center;
 z-index:1000;
@@ -204,40 +194,24 @@ from{opacity:0; transform:scale(0.9);}
 to{opacity:1; transform:scale(1);}
 }
 
+footer{
+text-align:center;
+padding:40px;
+font-size:0.9rem;
+opacity:0.7;
+}
+
+@media(max-width:768px){
+header h1{
+font-size:2rem;
+}
+.card{
+width:90%;
+}
+}
+
 </style>
 </head>
-<!-- MODAL -->
-
-<div id="modal1" class="modal">
-  <div class="modal-contenido">
-    <span class="cerrar" onclick="cerrarModal('modal1')">&times;</span>
-    
-    <h2>Catálogo Jewelry Blue</h2>
-    
-    <p><strong>Prácticas aplicadas:</strong></p>
-    <ul>
-      <li>Estructuración con HTML</li>
-      <li>Diseño responsive con CSS</li>
-      <li>Manipulación básica del DOM con JavaScript</li>
-    </ul>
-
-    <p><strong>Realizado para:</strong></p>
-    <ul>
-      <li>Proyecto final de la preparatoria</li>
-    </ul>
-
-    <img src="images/joyeria.png" width="100%" style="margin-top:15px; border-radius:10px;">
-  </div>
-</div>
-<script>
-function abrirModal(id){
-document.getElementById(id).style.display="flex";
-}
-
-function cerrarModal(id){
-document.getElementById(id).style.display="none";
-}
-</script>
 
 <body>
 
@@ -247,55 +221,109 @@ document.getElementById(id).style.display="none";
 <h3>Proyecto Integrador II · TSU Desarrollo de Software</h3>
 </header>
 
+<section class="sobre-mi">
+<h2>Sobre mí</h2>
+<p>
+Soy estudiante con interés en el desarrollo web y el diseño de interfaces.
+Me enfoco en crear soluciones funcionales, organizadas y visualmente claras, aplicando buenas prácticas
+de programación y trabajo colaborativo en proyectos académicos.
+</p>
+</section>
+
 <section class="proyectos">
 
 <div class="card">
 <h3>Catálogo Jewelry Blue</h3>
-
-<p><strong>Descripción:</strong> Catálogo web de productos de joyería organizado por categorías como anillos, collares, pulseras y charms. Incluye menú interactivo, encabezado con video y sección de contacto.</p>
-
-<p><strong>Tecnologías:</strong> HTML, CSS, JavaScript, Google Fonts.</p>
-
+<p><strong>Descripción:</strong> Catálogo web organizado por categorías de productos de joyería.</p>
+<p><strong>Tecnologías:</strong> HTML, CSS, JavaScript.</p>
 <p><strong>Rol:</strong> Desarrollo completo del sitio web.</p>
+   <p><strong>Realizado para:</strong></p>
+    <ul>
+      <li>Proyecto final de la preparatoria</li>
+    </ul>
 
-<p><strong>Aprendizajes:</strong> HTML semántico, diseño visual y organización de proyectos web.</p>
-
-<a class="boton" href="https://github.com/Angela805/PORTAFOLIO_PROYECTOS-" target="_blank">Ver Proyecto</a>
-  <button class="boton" onclick="abrirModal('modal1')">
-Vista previa
-</button>
-
+<a class="boton" href="https://github.com/Angela805/PORTAFOLIO_PROYECTOS-" target="_blank">Repositorio del Proyecto</a>
+<button class="boton" onclick="abrirModal('modal1')">Vista previa</button>
 </div>
 
 <div class="card">
-<h3> Panel de Inventario Farmacia</h3>
-
-<p><strong>Descripción:</strong> Sistema web dinámico para la gestión de medicamentos con autenticación de usuarios y conexión a base de datos MySQL. Implementa operaciones CRUD completas.</p>
-
-<p><strong>Tecnologías:</strong> PHP, MySQL, HTML, CSS, Bootstrap, JavaScript.</p>
-
-<p><strong>Rol:</strong> Desarrollo frontend y pruebas funcionales.</p>
-
-<p><strong>Aprendizajes:</strong> Manejo de sesiones, bases de datos y trabajo colaborativo.</p>
-
-<a class="boton" href="https://github.com/Angela805/PORTAFOLIO_PROYECTOS-" target="_blank">Ver Proyecto</a>
+<h3>Panel de Inventario Farmacia</h3>
+<p><strong>Descripción:</strong> Sistema web para gestión de inventario con operaciones CRUD.</p>
+<p><strong>Tecnologías:</strong> PHP, MySQL, Bootstrap.</p>
+<p><strong>Rol:</strong> Desarrollo frontend y pruebas.</p>
+     <p><strong>Realizado para:</strong></p>
+    <ul>
+      <li>Evaluacion 3ra unidad Aplicaciones Web</li>
+    </ul>
+<a class="boton" href="https://github.com/Angela805/PORTAFOLIO_PROYECTOS-" target="_blank">Repositorio del Proyecto</a>
+<button class="boton" onclick="abrirModal('modal2')">Vista previa</button>
 </div>
 
 <div class="card">
 <h3>SUPI</h3>
+<p><strong>Descripción:</strong> Plataforma privada para consulta de información docente.</p>
+<p><strong>Tecnologías:</strong> PHP, MySQL,CSS, HTML. </p>
+<p><strong>Rol:</strong> Diseño visual y pruebas de usabilidad.</p>
+   <p><strong>Realizado para:</strong></p>
+    <ul>
+      <li>Proyecto Final de la Materia Proyecto Integrador I</li>
+    </ul>
 
-<p><strong>Descripción:</strong> Plataforma web privada que permite a estudiantes localizar docentes y consultar horarios y correo institucional mediante herramientas de búsqueda.</p>
-
-<p><strong>Tecnologías:</strong> PHP, MySQL, XAMPP, Visual Studio Code.</p>
-
-<p><strong>Rol:</strong> Diseño visual, mockups y pruebas de usabilidad.</p>
-
-<p><strong>Aprendizajes:</strong> Diseño de interfaces y experiencia de usuario.</p>
-
-<a class="boton" href="https://github.com/DanielRoman2006/SUPI/tree/main/SUPI.CLICK" target="_blank">Ver Proyecto</a>
+<a class="boton" href="https://github.com/DanielRoman2006/SUPI/tree/main/SUPI.CLICK" target="_blank">Repositorio del Proyecto</a>
+<button class="boton" onclick="abrirModal('modal3')">Vista previa</button>
 </div>
 
 </section>
+
+<!-- MODALES -->
+
+<div id="modal1" class="modal">
+<div class="modal-contenido">
+<span class="cerrar" onclick="cerrarModal('modal1')">&times;</span>
+<h2>Catálogo Jewelry Blue</h2>
+<ul>
+<li>Estructuración con HTML</li>
+<li>Diseño responsive con CSS</li>
+<li>Manipulación básica con JavaScript</li>
+</ul>
+<img src="images/joyeria.png" width="100%" style="border-radius:10px;">
+</div>
+</div>
+
+<div id="modal2" class="modal">
+<div class="modal-contenido">
+<span class="cerrar" onclick="cerrarModal('modal2')">&times;</span>
+<h2>Panel de Inventario</h2>
+<ul>
+<li>Implementación CRUD</li>
+<li>Manejo de sesiones</li>
+<li>Conexión a base de datos MySQL</li>
+</ul>
+<img src="images/farmacia.png" width="100%" style="border-radius:10px;">
+</div>
+</div>
+
+<div id="modal3" class="modal">
+<div class="modal-contenido">
+<span class="cerrar" onclick="cerrarModal('modal3')">&times;</span>
+<h2>Sistema SUPI</h2>
+<ul>
+<li>Diseño de interfaz</li>
+<li>Pruebas de usabilidad</li>
+<li>Trabajo colaborativo</li>
+</ul>
+<img src="images/supi.png" width="100%" style="border-radius:10px;">
+</div>
+</div>
+
+<script>
+function abrirModal(id){
+document.getElementById(id).style.display="flex";
+}
+function cerrarModal(id){
+document.getElementById(id).style.display="none";
+}
+</script>
 
 <footer>
 © 2026 | Portafolio Académico
