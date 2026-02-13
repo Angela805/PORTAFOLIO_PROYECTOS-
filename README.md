@@ -1,6 +1,7 @@
-# PORTAFOLIO_PROYECTOS
+# PORTAFOLIO PROYECTOS
+--- 
 
-**Portafolio de proyectos creado para la materia Proyecto Integrador II** Este repositorio presenta una selección de proyectos desarrollados con el objetivo de demostrar habilidades y conocimientos adquiridos durante la formación académica en el área de desarrollo de software.---
+**Portafolio de proyectos creado para la materia Proyecto Integrador II** Este repositorio presenta una selección de proyectos desarrollados con el objetivo de demostrar habilidades y conocimientos adquiridos durante la formación académica en el área de desarrollo de software.    ---
 
 ## Proyecto 1: Catálogo Web "Jewelry Blue"
 
